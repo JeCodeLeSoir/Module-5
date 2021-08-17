@@ -7,10 +7,13 @@ Projet créer un Rpg 2d en php / html / css :3 !
 
 Affiché une map 2d en *tile* html / css grid
 
-Affiché un personage en html/css Position top/left
+Affiché un personage en html/css "grid pose" or Position top/left
 
-Créer un request post html à php pour modifier la position du joueur
-
+Créer une request method -> "post" html à php pour modifier la position du joueur
 
 Ajouter un pseudo au joueur !
 Ajouter xp et level au joueur !
+
+faire en sort que plusieurs joueurs puis se voir ! Ajax or Event Server Send
+
+Combat tour par tour
