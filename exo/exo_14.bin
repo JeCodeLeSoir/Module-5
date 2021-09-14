@@ -1,0 +1,22 @@
+
+=== Titre ===
+Exercice 14
+=== Enonce ===
+Donnez la syntaxe qui permet d'afficher le deuxième
+élément du tableau $cocktails ?
+<?php
+$cocktails = array('Mojito', 'Long Island
+Iced Tea', 'Gin Fizz', 'Moscow mule');
+?>
+=== Code ===
+<?php
+
+$cocktails = ['Mojito', 'Long Island Iced Tea', 'Gin Fizz', 'Moscow mule'];
+
+echo '<pre>';
+print_r($cocktails);
+echo '<pre><br>';
+
+echo $cocktails[1]."<br>";
+
+?>

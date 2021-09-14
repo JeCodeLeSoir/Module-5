@@ -1,0 +1,22 @@
+
+=== Titre ===
+Exercice 19
+=== Enonce ===
+Créer une fonction qui s'appelle soustraction(). Elle prendra
+deux arguments de type int.
+Elle devra retourner la soustraction des deux.
+
+Exemple :
+● argument 1 = 5
+● Argument 2 = 5 ;
+● Resultat : 0
+
+=== Code ===
+<?php
+ function soustraction($a, $b ){
+    return $a - $b;
+ }
+
+ echo soustraction(5, 5) . "<br><br>";
+?>
+

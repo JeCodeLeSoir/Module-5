@@ -1,8 +1,18 @@
+
+=== Titre ===
+Exercice 2
+=== Enonce ===
+Calculer le prix TTC du produit.
 <?php
-require_once __DIR__ . '/login.php';
+$prix_ht = 50;
+$tva = 20;
+$prix_ttc = 0;
+echo 'Le prix TTC du produit est de
+'.$prix_ttc.' €.';
+?>
 
-require_once __DIR__ . '/menu.php';
-
+=== Code ===
+<?php
 
 if (isset($_POST['prix_ht']) && isset($_POST['tva'])) {
     
@@ -22,3 +32,4 @@ if (isset($_POST['prix_ht']) && isset($_POST['tva'])) {
 
     <input type="submit" value ="Calculer">
 </form>
+                

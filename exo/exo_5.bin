@@ -1,6 +1,13 @@
+
+=== Titre ===
+Exercice 5
+=== Enonce ===
+Déclarer une variable $budget qui contient la somme de 1
+553,89 €. Déclarer une variable $achats qui contient la
+somme de 1 554,76 €. Afficher si le budget permet de payer
+les achats.
+=== Code ===
 <?php
-require_once __DIR__ . '/login.php';
-require_once __DIR__ . '/menu.php';
 
 
 if (isset($_POST['budjet']) && isset($_POST['achats'])) {
@@ -32,3 +39,4 @@ if (isset($_POST['budjet']) && isset($_POST['achats'])) {
 
     <input type="submit" value ="Calculer">
 </form>
+

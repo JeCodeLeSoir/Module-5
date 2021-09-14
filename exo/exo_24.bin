@@ -1,0 +1,32 @@
+
+=== Titre ===
+Exercice 24
+=== Enonce ===
+Créer une fonction qui s'appelle plusGrand().
+
+Elle prendra un argument de type array.
+
+Elle devra retourner le plus grand des élements présent dans
+l'array.
+
+Si l'array est vide, il faudra retourner null;
+=== Code ===
+   <?php
+function plusGrand($array)
+{ 
+    if(!isset($array))
+        return null;
+
+    $p = 0;
+    for ($i = 0; $i < count($array); $i++) {
+        if($array[$i] > $p){
+            $p = $array[$i];
+        }
+    }
+    return $p;
+}
+
+var_dump(plusGrand(null));
+echo "<br><br>";
+echo plusGrand([1, 8 , 3, 4]) . "<br><br>";
+?>

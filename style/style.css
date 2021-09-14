@@ -1,0 +1,331 @@
+body{
+    padding: 0;
+    margin: 0;
+
+    font-family: sans-serif;
+
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+}
+
+h1{
+    margin:0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.auth{
+    position: fixed;
+    background-color: gray;
+    width: 40%;
+    height: 50vh;
+
+    top:50%;
+    left:50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 5px;
+}
+
+.auth > form{
+   display: flex;
+   flex-direction: column;
+
+   justify-content: center;
+   align-items: center;
+
+   height: 100%;
+}
+
+.auth > form input{
+   display: block;
+   width: 40%;
+   height: 40px;
+   margin: 15px;
+
+   border-radius: 5px;
+
+   border: 0;
+
+   text-indent: 15px;
+}
+
+.auth > form input[type="submit"]{
+    text-indent : 0;
+    width: 30%;
+}
+
+
+.user{
+
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+    height: 8%;
+
+    text-align: center;
+
+    color:white;
+
+    padding: 5px;
+}
+
+.user h3 {
+   margin: 0;
+   height: 40px;
+}
+
+.user a {
+    border: 2px solid white;
+    color:white;
+}
+
+.menu{
+    background-color: gray;
+    width: 20vw;
+    height: 100vh;
+    display: block;
+}
+
+.menu ul {
+    width: 100%;
+    height: 90%;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    padding: 5px;
+
+    overflow-y: scroll;
+}
+
+.menu ul li a{
+    display: block;
+    width: 60%;
+    height: 40px;
+    margin: 25px auto;
+    line-height: 40px;
+
+    padding: 0;
+
+    color: black;
+}
+
+a{
+   border: 2px solid black;
+   text-align:  center;
+   text-decoration: none;
+   padding: 8px;
+}
+
+.page{
+    width: 79vw;
+    height: 100vh;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow-y: scroll;
+}
+
+.page a {
+    border: 2px solid black;
+    color:black;
+}
+
+.page > form{
+    width: 100%;
+    min-height: 100%;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.page > form input[type="submit"]{
+    width: 30%;
+    height: 60px;
+
+    font-size: 25px;
+
+    border: 0;
+    border-radius: 8px;
+
+    background-color: rgb(0, 0, 0);
+
+    color: white;
+}
+
+.page > form input[type="text"]{
+   width: 50%;
+   height: 40px;
+}
+
+.page > form input[type="submit"]:hover{
+   border-bottom: solid 15px rgb(26, 131, 192);
+   cursor: pointer;
+}
+
+.page .enonce{
+    display: inline-block;
+    width: 100%;
+    height: 30vh;
+
+    padding: 15px;
+}
+
+.page .enonce textarea{
+
+    background-color: rgb(146, 146, 146);
+    margin-top: 25px;
+    width: 60%;
+    height: 80%;
+
+    border-radius: 8px;
+    border: 0;
+
+    color: white;
+}
+ 
+.page .code{
+    display: inline-block;
+    background-color: rgb(41, 41, 41);
+    width: 49%;
+    height: 50vh;
+
+    color: rgb(179, 179, 179);
+
+    line-height: 20px;
+
+    padding: 15px;
+    margin: 5px;
+
+    border-radius: 8px;
+}
+
+.page .code pre{
+    display: block;
+    width: 100%;
+    height: 90%;
+
+    margin: 0;
+}
+
+.page .code pre code{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 5px;
+
+    overflow-y: scroll;
+}
+
+.page .code textarea{
+    margin-top: 25px;
+    width: 100%;
+    height: 90%;
+
+    border-radius: 8px;
+    border: 0;
+}
+
+.page .result{
+    display: inline-block;
+    background-color: rgb(110, 110, 110);
+    width: 49%;
+    height: 50vh;
+
+    padding: 15px;
+    margin: 5px;
+
+    border-radius: 8px;
+
+    overflow-y: scroll;
+}
+
+
+.page .codeExo{
+    display: inline-grid;
+    background-color: rgb(41, 41, 41);
+    width: 49%;
+    height: 50vh;
+
+    color: rgb(179, 179, 179);
+
+    line-height: 20px;
+
+    padding: 15px;
+    margin: 5px;
+
+    border-radius: 8px;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 6fr 2fr;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.page .codeExo pre{
+
+    position: relative;
+    flex: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+   
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+    margin-top: -1.00em;
+
+  
+   
+}
+
+.page .codeExo pre code{
+    background-color: gray;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 0;
+
+    overflow-y: scroll;
+
+    top:0;
+}
+
+.page .codeExo textarea{
+    flex: 1;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+    outline: none;
+
+    overflow-y: scroll;
+
+    margin-top: -1.00em;
+}

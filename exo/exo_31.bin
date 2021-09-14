@@ -1,0 +1,12 @@
+
+=== Titre ===
+Exercice 31
+=== Enonce ===
+test
+
+=== Code ===
+   
+   <?php
+echo "123";
+?>
+

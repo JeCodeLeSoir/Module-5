@@ -1,0 +1,32 @@
+
+=== Titre ===
+Exercice 6
+=== Enonce ===
+Déclarer une variable $age qui contient la valeur de type
+integer de votre choix. Réaliser une condition pour afficher
+si la personne est mineure ou majeure.
+
+=== Code ===
+<?php
+
+if(isset($_POST['age'])){
+
+    $age = intval($_POST['age']);
+
+    echo $age." ans ==> ";
+
+    if ($age >= 18) {
+        echo "majeure !<br>";
+    }
+    else if($age < 18){
+        echo "mineure !<br>";
+    }
+    
+}
+?>
+
+<form method="POST">
+    <input type="number" name="age" value="16">
+    <input type="submit" value ="Calculer">
+</form>
+

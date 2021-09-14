@@ -1,0 +1,20 @@
+
+=== Titre ===
+Exercice 25
+=== Enonce ===
+Créer une fonction from scratch qui s'appelle
+verificationPassword().
+
+Elle prendra un argument de type string.
+
+Elle devra retourner un boolean qui vaut true si le password
+fait au moins 8 caractères et false si moins.
+=== Code ===
+   <?php
+function verificationPassword($pass){
+    return strlen($pass) >= 8;
+}
+
+var_dump(verificationPassword("azerty"));
+echo "<br><br>";
+?>

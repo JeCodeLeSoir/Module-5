@@ -1,0 +1,20 @@
+
+=== Titre ===
+Exercice 30
+=== Enonce ===
+Créer une fonction qui s'appelle quelleDate(). Elle devra
+retourner une string représentant la date actuelle sous le
+format suivant DD/MM/YYYY
+
+Où DD représente le jour actuelle, MM le mois actuel et YYYY
+l'année actuelle.
+
+Les valeurs doivent être numérique et non au format String.
+=== Code ===
+   <?php
+function quelleDate(){
+    return date("d/m/y");
+}
+
+echo  quelleDate() . "<br><br>";
+?>

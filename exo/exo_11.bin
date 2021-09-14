@@ -1,0 +1,34 @@
+
+=== Titre ===
+Exercice 11
+=== Enonce ===
+En utilisant la fonction rand(), remplir un tableau avec 10
+nombres aléatoires.
+
+Puis, tester si le chiffre 42 est dans le tableau et afficher un
+message en conséquence.
+
+Enfin, afficher le contenu de votre tableau avec var_dump.
+
+=== Code ===
+<?php
+
+$nums = [];
+
+for ($i=0; $i< 10; $i++) {
+    $nums [] = rand(0, 100);
+}
+
+
+if(in_array(42, $nums)){
+    echo '<h1>42 à était trouvé !</h1>';
+}
+else{
+    echo '<h1>pas trouvé 42 !</h1>';
+}
+
+
+var_dump($nums);
+
+?>
+

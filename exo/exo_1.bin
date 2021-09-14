@@ -1,8 +1,21 @@
+=== Categories ===
+Exercice
+=== Titre ===
+Exercice 1
+=== Enonce ===
+Modifier le code ci-dessous pour calculer la moyenne des
+notes.
+
 <?php
-require_once __DIR__ . '/login.php';
+$note_maths = 15;
+$note_francais = 12;
+$note_histoire_geo = 9;
+$moyenne = 0;
+echo 'La moyenne est de '.$moyenne.' / 20.';
+?>
 
-
-require_once __DIR__ . '/menu.php';
+=== Code ===
+<?php
 
 if(isset($_POST['notes'])){
     $notes = explode(",", $_POST['notes']);
@@ -25,3 +38,9 @@ if(isset($_POST['notes'])){
     <input type="text" name="notes" value="15, 12, 9">
     <input type="submit" value ="Calculer">
 </form>
+
+=== Exo ===
+ >== Param
+[15, 12, 9]
+ >== Result
+12

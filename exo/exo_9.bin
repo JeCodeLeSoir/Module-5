@@ -1,6 +1,15 @@
+
+=== Titre ===
+Exercice 9
+=== Enonce ===
+Déclarer une variable avec le nom de votre choix et avec la
+valeur 0. Tant que cette variable n'atteint pas 20, il faut :
+● l'afficher ;
+● incrémenter sa valeur de 2 ;
+Si la valeur de la variable est égale à 10, la mettre en valeur
+avec la balise HTML appropriée.
+=== Code ===
 <?php
-require_once __DIR__ . '/login.php';
-require_once __DIR__ . '/menu.php';
 
 echo "v1<br>";
 

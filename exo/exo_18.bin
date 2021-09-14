@@ -1,0 +1,20 @@
+
+=== Titre ===
+Exercice 18
+=== Enonce ===
+Créer une fonction qui s'appelle somme(). Elle prendra deux
+arguments de type int.
+Elle devra retourner la somme des deux.
+
+Exemple :
+● argument 1 = 5 Argument 2 = 5 ;
+● Resultat : 10
+=== Code ===
+   <?php
+
+function somme($a, $b ){
+    return $a + $b;
+}
+
+echo somme(5, 5) . "<br><br>";
+?>

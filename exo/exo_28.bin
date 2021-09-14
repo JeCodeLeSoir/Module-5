@@ -1,0 +1,28 @@
+
+=== Titre ===
+Exercice 28
+=== Enonce ===
+Créer une fonction qui s'appelle listHTML(). Elle prendra deux arguments :
+Un string représentant le nom de la liste
+Un array représentant les élements de cette liste
+Elle devra retourner une liste HTML. Chaque element de cette liste viendra du tableau passé en
+paramètre.
+Exemple : Paramètre : Titre : Capitale Liste : ["Paris", "Berlin", "Moscou"] Résultat :
+<h3>Capitale</h3><ul><li>Paris</li><li>Berlin</li><li>Moscou</li></ul>
+Comme vous pouvez le voir il n'y a pas d'espace ni de retour à la ligne entre les élements de la liste.
+Pas d'espace non plus entre le titre et la liste.
+Si le titre est null et vide il faut que la fonction retourne null. Si l'array est vide, il faut que la fonction
+retourne null.
+=== Code ===
+   <?php
+function listHTML($title, $array){
+    echo "<h3>".$title."</h3>";
+    echo "<ul>";
+        foreach ($array as $key => $value) {
+            echo '<li id="'.$key.'">'.$value.'</li>';
+        }
+    echo "</ul>";
+}
+
+echo  listHTML("Capitale", ["Paris", "Berlin", "Moscou"]) . "<br><br>";
+?>

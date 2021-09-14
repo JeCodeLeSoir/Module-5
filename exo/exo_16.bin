@@ -1,0 +1,22 @@
+
+=== Titre ===
+Exercice 16
+=== Enonce ===
+Créer une fonction qui s'appelle jeRetourneMonArgument().
+
+Exemple :
+● Arg = "abc" ==> Return abc
+● Arg = 123 ==> Return 123
+
+=== Code ===
+   
+   <?php
+
+function jeRetourneMonArgument($arg){
+      return $arg;
+}
+
+echo jeRetourneMonArgument("abc") . "<br><br>";
+echo jeRetourneMonArgument(123) . "<br><br>";
+?>
+

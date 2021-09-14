@@ -1,0 +1,22 @@
+
+=== Titre ===
+Exercice 10
+=== Enonce ===
+Déclarer une variable de type array qui stocke les
+informations suivantes :
+● France : Paris
+● Allemagne : Berlin
+● Italie : Rome
+Afficher les valeurs de tous les éléments du tableau en
+utilisant la boucle foreach
+=== Code ===
+<?php
+
+
+$array = ['France' => 'Paris', 'Allemagne' => 'Berlin', 'Italie' => 'Rome'];
+
+foreach ($array as $key => $value) {
+    echo "la capital du pays " . $key  . " et ". $value . '<br>';
+}
+
+?>

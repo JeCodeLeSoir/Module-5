@@ -1,0 +1,49 @@
+
+=== Titre ===
+Exercice 12
+=== Enonce ===
+En utilisant la fonction rand(), remplir un tableau avec 10
+nombres aléatoires.
+
+Puis, trier les valeurs dans deux tableaux distincts.
+
+Le premier contiendra les valeurs inférieures à 50 et le
+second contiendra les valeurs supérieures ou égales à 50.
+
+Enfin, afficher le contenu des deux tableaux.
+
+=== Code ===
+<?php
+$nums = [];
+
+for ($i=0; $i< 10; $i++) {
+    $nums [] = rand(0, 100);
+}
+
+
+$numsSup50 = [];
+$numsInf50 = [];
+
+for ($i=0; $i< 10; $i++) {
+    if($nums[$i] > 50){
+        $numsSup50[] = $nums[$i];
+    }
+    if($nums[$i] <= 50){
+        $numsInf50[] = $nums[$i];
+    }
+}
+
+echo 'inférieures à 50<br>';
+
+echo '<pre>';
+print_r($numsInf50);
+echo '</pre>';
+
+echo 'supérieures ou égales à 50<br>';
+
+echo '<pre>';
+print_r($numsSup50);
+echo '</pre>';
+
+?>
+

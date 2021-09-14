@@ -1,0 +1,20 @@
+
+=== Titre ===
+Exercice 21
+=== Enonce ===
+Créer une fonction qui s'appelle division(). Elle prendra deux
+arguments de type int.
+Elle devra retourner la division des deux.
+
+Exemple :
+● argument 1 = 5
+● Argument 2 = 5 ;
+● Resultat : 1
+=== Code ===
+   <?php
+function division($a, $b ){
+    return $a / $b;
+}
+
+echo division(5, 5) . "<br><br>";
+?>

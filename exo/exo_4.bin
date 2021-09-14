@@ -1,0 +1,19 @@
+
+=== Titre ===
+Exercice 4
+=== Enonce ===
+Déclarer une variable $sexe qui contient une chaîne de
+caractères. Créer une condition qui affiche un message
+différent en fonction de la valeur de la variable.
+=== Code ===
+<?php
+
+$sexe = "M";
+if($sexe == "M" ){
+    echo "Homme<br>";
+}
+else if ($sexe == "F"){
+    echo "Femme<br>";
+}
+
+?>

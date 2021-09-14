@@ -1,0 +1,16 @@
+
+=== Titre ===
+Exercice 15
+=== Enonce ===
+Faite en sorte que la fonction HelloWorld retourne
+exactement la valeur Hello World!
+=== Code ===
+<?php
+
+function HelloWorld(){
+    return "Hello World!";
+}
+
+echo HelloWorld() . "<br><br>";
+
+?>

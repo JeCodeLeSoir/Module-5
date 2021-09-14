@@ -1,0 +1,24 @@
+
+=== Titre ===
+Exercice 22
+=== Enonce ===
+Créer une fonction qui s'appelle estIlMajeure(). Elle prendra
+un argument de type int.
+Elle devra retourner un boolean.
+Si age >= 18 elle doit retourner true
+si age < 18 elle doit retourner false
+
+Exemple :
+● age = 5 ==> false
+● age = 34 ==> true
+=== Code ===
+   <?php
+function estIlMajeure($age){
+   return $age >= 18;
+}
+
+var_dump(estIlMajeure(5));
+echo "<br><br>";
+var_dump(estIlMajeure(34));
+echo "<br><br>";
+?>

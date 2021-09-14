@@ -1,0 +1,48 @@
+
+=== Titre ===
+Exercice 27
+=== Enonce ===
+Créer une fonction qui s'appelle capital(). Elle prendra un argument de
+type string. Elle devra retourner le nom de la capitale des pays suivants :
+● France ==> Paris
+● Allemagne ==> Berlin
+● Italie ==> Rome
+● Maroc ==> Rabat
+● Espagne ==> Madrid
+● Portugal ==> Lisbonne
+● Angleterre ==> Londres
+● Tout autre pays ==> Inconnu
+Il faudra utiliser la structure SWITCH pour faire cette exercice.
+=== Code ===
+<?php
+
+function capital($pays){
+
+
+    $array = [
+        'France' => 'Paris',
+        'Allemagne' => 'Berlin',
+        'Italie' => 'Rome',
+        'Maroc' => 'Rabat',
+        'Espagne' => 'Madrid',
+        'Portugal' => 'Lisbonne',
+        'Angleterre' => 'London',
+        'Tout autre pays' => 'Inconnu'
+    ];
+
+    foreach ($array as $key => $value) {
+        if (strtolower($key) == strtolower($pays)) {
+            return $value;
+        }
+    }
+
+    return $array['Tout autre pays'];
+}
+
+var_dump(capital("Italie"));
+echo "<br><br>";
+
+var_dump(capital("xx"));
+echo "<br><br>";
+
+?>

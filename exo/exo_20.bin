@@ -1,0 +1,20 @@
+
+=== Titre ===
+Exercice 20
+=== Enonce ===
+Créer une fonction qui s'appelle multiplication(). Elle prendra
+deux arguments de type int.
+Elle devra retourner la multiplication des deux.
+
+Exemple :
+● argument 1 = 5
+● Argument 2 = 5 ;
+● Resultat : 25
+=== Code ===
+   <?php
+function multiplication($a, $b ){
+    return $a * $b;
+}
+
+echo multiplication(5, 5) . "<br><br>";
+?>

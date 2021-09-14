@@ -1,0 +1,23 @@
+
+=== Titre ===
+Exercice 23
+=== Enonce ===
+Créer une fonction qui s'appelle premierElementTableau().
+Elle prendra un argument de type array.
+
+Elle devra retourner le premier élement du tableau.
+
+Si l'array est vide, il faudra retourner null;
+=== Code ===
+   <?php
+function premierElementTableau($array){
+  if(!isset($array))
+    return null;
+
+  return $array[0];
+}
+
+var_dump(premierElementTableau(null));
+echo "<br><br>";
+echo premierElementTableau([1, 2 , 3]) . "<br><br>";
+?>
